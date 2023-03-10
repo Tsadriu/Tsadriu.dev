@@ -1,25 +1,37 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
 }
 
 body {
     /*background-image: url("assets/images/Root of Nightmare Bg.png");
     background-repeat: repeat-y;*/
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
+    flex-direction: column;
     background-color: rgb(32, 53, 97);
-    border: 0.5px solid black;
+    border: 1px solid black;
     border-radius: 15px;
-    margin: auto;
-    margin-top: 15px;
+    margin: 15px auto auto;
     padding: 15px;
     width: 85%;
 }
 
+#clock {
+    font-size: 20pt;
+    flex-direction: column;
+    text-align: right;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
 .flex {
     display: flex;
+}
+
+h2 {
+    font-size: 36pt;
+    text-align: center;
 }
 
 .logo {
@@ -38,73 +50,132 @@ body {
 }
 
 .logo-desc {
-    color: aliceblue;
+    align-items: center;
     font-size: 24pt;
     font-weight: bold;
     flex-direction: column;
-    align-items: center;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
-.logo-desc::after {
-    content: '|';
-    animation: cursor 1s alternate infinite;
+/*noinspection ALL*/
+.logo-desc i::after {
+    content: ".dev";
+    animation: logoDescBlink 4s infinite;
+    color: hsl(var(--customHue), 100%, 50%);
 }
 
-@keyframes cursor {
-    from {
+@keyframes logoDescBlink {
+    0% {
+        opacity: 0;
+    }
+    25% {
         opacity: 1;
     }
-
-    to {
+    75% {
+        opacity: 1;
+    }
+    100% {
         opacity: 0;
     }
 }
 
-.projects-section {
-    display: flex;
+.projects {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: 10px;
     color: white;
 }
 
-.project-bg {
+.project-desc {
     margin-top: 15px;
-    width: 264px;
+    max-width: 264px;
+    text-align: justify;
+}
+
+.project-img {
     border-radius: 15px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.33);
+    width: 264px;
     transition: 100ms ease;
 }
 
-.project-bg:hover {
+.project-img:hover {
     transform: scale(1.05);
-    margin-right: 15px;
+    margin-bottom: 15px;
 }
 
-.shadow {
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.33);
-}
-
-#nav_holder {
+#nav-holder {
     background-color: rgba(9, 9, 9, 0.85);
+    border-radius: 15px;
+    padding: 20px;
 }
 
-.nav_el {
-    padding: 20px;
-    text-align: center;
-    display: inline-block;
+.nav-el {
+    padding: 8px;
+    justify-content: space-evenly;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: 600;
 }
 
-.nav_el:hover {
+.nav-el:hover {
     background-color: rgb(131, 131, 131);
     color: rgb(0, 0, 0);
-    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 8px;
+    text-align: center;
+    animation: navElHover 1s ease-in-out infinite;
 }
 
-.nav_el:active {
-    color: rgb(175, 87, 72);
+@keyframes navElHover {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+        text-shadow:
+                -0.5px -0.5px 0 #FFFFFF,
+                0.5px -0.5px 0 #FFFFFF,
+                -0.5px 0.5px 0 #FFFFFF,
+                0.5px 0.5px 0 #FFFFFF;
+        margin-right: 5px;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.nav-el:active {
+    animation: navElPress 1s ease-in-out infinite;
+    color: rgb(49, 138, 255);
     text-decoration: none;
+    text-shadow:
+            -0.5px -0.5px 0 #000000,
+            0.5px -0.5px 0 #000000,
+            -0.5px 0.5px 0 #000000,
+            0.5px 0.5px 0 #000000;
+}
+
+@keyframes navElPress {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+        text-shadow:
+                -1px -1px 0 #000000,
+                1px -1px 0 #000000,
+                -1px 1px 0 #000000,
+                1px 1px 0 #000000;
+        margin-right: 5px;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.shadow {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.33);
 }
