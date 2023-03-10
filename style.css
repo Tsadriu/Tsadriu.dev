@@ -3,6 +3,29 @@
     color: whitesmoke;
 }
 
+a {
+    text-decoration: none;
+    animation: anchorBlink 4s ease-in-out infinite;
+}
+
+a:hover {
+    animation: step-end;
+    text-decoration: none;
+    color: orange;
+}
+
+@keyframes anchorBlink {
+    0% {
+        color: whitesmoke;
+    }
+    50% {
+        color: yellow;
+    }
+    100% {
+        color: whitesmoke;
+    }
+}
+
 body {
     /*background-image: url("assets/images/Root of Nightmare Bg.png");
     background-repeat: repeat-y;*/
@@ -31,6 +54,7 @@ body {
 
 h2 {
     font-size: 24pt;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -97,9 +121,9 @@ h2 {
 }
 
 .project-desc:hover {
-    border: 5px;
-    border-radius: 10px;
     animation: projectDescShine 4s infinite;
+    border: 10px;
+    border-radius: 20px;
 }
 
 @keyframes projectDescShine {
@@ -107,11 +131,9 @@ h2 {
         background-color: rgba(255, 255, 255, 0.1);
     }
     50% {
-
         background-color: rgba(255, 255, 255, 0.05);
     }
     100% {
-
         background-color: rgba(255, 255, 255, 0.1);
     }
 }
@@ -149,54 +171,14 @@ h2 {
     border-radius: 15px;
     padding: 8px;
     text-align: center;
-    animation: navElHover 1s ease-in-out infinite;
-}
-
-@keyframes navElHover {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-        text-shadow:
-                -0.5px -0.5px 0 #FFFFFF,
-                0.5px -0.5px 0 #FFFFFF,
-                -0.5px 0.5px 0 #FFFFFF,
-                0.5px 0.5px 0 #FFFFFF;
-        margin-right: 5px;
-    }
-    100% {
-        transform: scale(1);
-    }
+    transition: 100ms ease;
 }
 
 .nav-el:active {
-    animation: navElPress 1s ease-in-out infinite;
     color: rgb(49, 138, 255);
     text-decoration: none;
-    text-shadow:
-            -0.5px -0.5px 0 #000000,
-            0.5px -0.5px 0 #000000,
-            -0.5px 0.5px 0 #000000,
-            0.5px 0.5px 0 #000000;
-}
-
-@keyframes navElPress {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-        text-shadow:
-                -1px -1px 0 #000000,
-                1px -1px 0 #000000,
-                -1px 1px 0 #000000,
-                1px 1px 0 #000000;
-        margin-right: 5px;
-    }
-    100% {
-        transform: scale(1);
-    }
+    text-shadow: -0.5px -0.5px 0 #000000, 0.5px -0.5px 0 #000000, -0.5px 0.5px 0 #000000, 0.5px 0.5px 0 #000000;
+    transition: 100ms ease;
 }
 
 .shadow {
