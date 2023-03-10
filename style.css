@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Dungeon';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -12,18 +12,34 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.games-bg {
+.flex {
+    display: flex;
+}
+
+.projects-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    color: white;
+}
+
+.project-bg {
     margin-top: 15px;
     width: 264px;
     border-radius: 15px;
-    vertical-align: middle;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.33);
     transition: 100ms ease;
 }
 
-.games-bg:hover {
+.project-bg:hover {
     transform: scale(1.05);
     margin-right: 15px;
+}
+
+.project-bg-desc {
+    align-items: flex-end;
+    max-width: 264px;
 }
 
 .youtube {
