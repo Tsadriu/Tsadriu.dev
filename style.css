@@ -157,6 +157,7 @@ h2 {
 }
 
 .nav-el {
+    animation: none;
     padding: 8px;
     justify-content: space-evenly;
     text-decoration: none;
@@ -165,10 +166,10 @@ h2 {
 }
 
 .nav-el:hover {
-    background-color: rgb(131, 131, 131);
     color: rgb(0, 0, 0);
     font-weight: bold;
     border-radius: 15px;
+    background-color: rgb(131, 131, 131);
     padding: 8px;
     text-align: center;
     transition: 100ms ease;
