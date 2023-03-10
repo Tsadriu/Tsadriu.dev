@@ -30,7 +30,7 @@ body {
 }
 
 h2 {
-    font-size: 36pt;
+    font-size: 24pt;
     text-align: center;
 }
 
@@ -80,6 +80,7 @@ h2 {
 }
 
 .projects {
+    align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -88,15 +89,37 @@ h2 {
 }
 
 .project-desc {
-    margin-top: 15px;
-    max-width: 264px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    max-width: 175px;
     text-align: justify;
 }
 
+.project-desc:hover {
+    border: 5px;
+    border-radius: 10px;
+    animation: projectDescShine 4s infinite;
+}
+
+@keyframes projectDescShine {
+    0% {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    50% {
+
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+    100% {
+
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
 .project-img {
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.33);
-    width: 264px;
+    width: 175px;
     transition: 100ms ease;
 }
 
