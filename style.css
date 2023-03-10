@@ -1,19 +1,63 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    /*background-image: url("bg.jpg");*/
-    background-image: url("assets/images/Root of Nightmare Bg.png");
-    background-repeat: repeat-y;
+    /*background-image: url("assets/images/Root of Nightmare Bg.png");
+    background-repeat: repeat-y;*/
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background-color: rgb(32, 53, 97);
+    border: 0.5px solid black;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 15px;
+    width: 85%;
 }
 
 .flex {
     display: flex;
+}
+
+.logo {
+    border-radius: 25%;
+    display: block;
+    height: 128px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 100ms ease;
+    width: 128px;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    margin-bottom: 5px;
+}
+
+.logo-desc {
+    color: aliceblue;
+    font-size: 24pt;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-desc::after {
+    content: '|';
+    animation: cursor 1s alternate infinite;
+}
+
+@keyframes cursor {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
 
 .projects-section {
@@ -37,52 +81,12 @@ body {
     margin-right: 15px;
 }
 
-.project-bg-desc {
-    align-items: flex-end;
-    max-width: 264px;
-}
-
-.youtube {
-    width: 128px;
-    height: 128px;
-}
-
-.container {
-    border: 1px solid black;
-    background-color: rgb(32, 53, 97);
-    width: 1200px;
-    margin: auto;
-}
-
-.logo {
-    margin: 10px;
-    width: 128px;
-    height: 128px;
-    vertical-align: middle;
-    border-radius: 25%;
-}
-
-.logo-text {
-    font-size: 32pt;
-    color: aliceblue;
-    vertical-align: middle;
-    font-weight: 600;
-}
-
-.row {
-    margin: 10px;
-    color: white;
-}
-
-.desc {
-    color: rgb(255, 255, 255);
-    font-size: 14pt;
-    font-weight: 700;
+.shadow {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.33);
 }
 
 #nav_holder {
-    background-color: black;
-    margin: 10px;
+    background-color: rgba(9, 9, 9, 0.85);
 }
 
 .nav_el {
@@ -103,27 +107,4 @@ body {
 .nav_el:active {
     color: rgb(175, 87, 72);
     text-decoration: none;
-}
-
-a {
-    color:rgb(60, 255, 0);
-    font-weight: 600;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.social {
-    color:rgb(255, 255, 255); 
-    font-size: 30pt;
-}
-
-.list {
-    padding-left: 20px;
-}
-
-h2 {
-    text-decoration: underline;
 }
