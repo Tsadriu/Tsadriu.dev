@@ -1,6 +1,8 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: whitesmoke;
+
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 a {
@@ -27,18 +29,32 @@ a:hover {
 }
 
 body {
-    /*background-image: url("assets/images/Root of Nightmare Bg.png");
-    background-repeat: repeat-y;*/
+    background: black url("assets/images/star-bg.jpg") repeat;
+    animation: moveTwinkleBack 180s alternate infinite;
+}
+
+@keyframes moveTwinkleBack {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -5000px 9000px;
+    }
 }
 
 .container {
     flex-direction: column;
-    background-color: rgb(32, 53, 97);
+    font-size: 14pt;
+    background-color: rgba(45, 45, 45, 0.75);
     border: 1px solid black;
     border-radius: 15px;
     margin: 15px auto auto;
-    padding: 15px;
+    padding: 20px;
     width: 85%;
+}
+
+.container h2 {
+    font-style: italic;
 }
 
 #clock {
@@ -46,10 +62,17 @@ body {
     flex-direction: column;
     text-align: right;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-bottom: -25px;
 }
 
 .flex {
     display: flex;
+}
+
+#github {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
 }
 
 h2 {
@@ -61,16 +84,10 @@ h2 {
 .logo {
     border-radius: 25%;
     display: block;
-    height: 128px;
+    height: 164px;
     margin-left: auto;
     margin-right: auto;
-    transition: 100ms ease;
-    width: 128px;
-}
-
-.logo:hover {
-    transform: scale(1.05);
-    margin-bottom: 5px;
+    width: 164px;
 }
 
 .logo-desc {
@@ -78,13 +95,14 @@ h2 {
     font-size: 24pt;
     font-weight: bold;
     flex-direction: column;
+    padding-bottom: 50px;
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
 /*noinspection ALL*/
 .logo-desc i::after {
     content: ".dev";
-    animation: logoDescBlink 4s infinite;
+    animation: logoDescBlink 5s infinite;
     color: hsl(var(--customHue), 100%, 50%);
 }
 
@@ -152,6 +170,7 @@ h2 {
 
 #nav-holder {
     background-color: rgba(9, 9, 9, 0.85);
+    justify-content: center;
     border-radius: 15px;
     padding: 20px;
 }
@@ -159,14 +178,13 @@ h2 {
 .nav-el {
     animation: none;
     padding: 8px;
-    justify-content: space-evenly;
+    margin-right: 50px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: 600;
 }
 
 .nav-el:hover {
-    color: rgb(0, 0, 0);
     font-weight: bold;
     border-radius: 15px;
     background-color: rgb(131, 131, 131);
