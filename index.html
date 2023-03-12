@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/images/logo.png">
+    <link rel="icon" href="assets/images/logo_round.png">
     <title>
         Tsadriu - Fabio Oliveira
     </title>
@@ -14,7 +14,7 @@
 <body>
     <div class="container shadow">
         <span id="clock" class="flex" onload="currentTime()"></span>
-        <span id="github" class="flex"><a href="https://github.com/Tsadriu">My GitHub</a></span>
+        <span id="github" class="flex"><a href="https://github.com/Tsadriu" target="_blank"><i class="fa-brands fa-github"></i> MY GITHUB</a></span>
             <img src="assets/images/logo.png" class="logo shadow">
         <span class="logo-desc flex">
             <i>Tsadriu</i>
@@ -47,29 +47,35 @@
         <h2 id="my-projects" class="flex">My projects</h2>
         <section class="projects flex">
             <div class="project-desc">
+                <div class="project-title">ARCADIA</div>
                 <img src="assets/images/arcadia_bg.jpg" class="project-img">
                 A small 2D hack-and-slash game developed way back in 2017 when I had little to no experience in coding.
-                Developed with <a href="https://gamemaker.io/en">Game Maker Studio 2</a>.
+                Developed with <a href="https://gamemaker.io/en" target="_blank">Game Maker Studio 2</a>.
             </div>
             <div class="project-desc">
-                <a href="https://gamejolt.com/games/Nestronomus/463568"><img src="assets/images/nestronomus_bg.png" class="project-img"></a>
-                A small 2D turn-based RPG game developed between 2020 and 2021 using <a href="https://learn.microsoft.com/en-us/dotnet/csharp/">C#</a> and <a href="https://unity.com/">Unity</a>.
+                <div class="project-title">NESTRONOMUS</div>
+                <a href="https://gamejolt.com/games/Nestronomus/463568" target="_blank"><img src="assets/images/nestronomus_bg.png" class="project-img"></a>
+                A small 2D turn-based RPG game developed between 2020 and 2021 using <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank">C#</a> and <a href="https://unity.com/" target="_blank">Unity</a>.
             </div>
             <div class="project-desc">
-                <a href="https://github.com/Tsadriu/FlyffUniverseLauncher"><img src="assets/images/flyffBg.png" class="project-img"></a>
-                A <a href="https://learn.microsoft.com/en-us/dotnet/csharp/">C#</a> <a href="https://learn.microsoft.com/en-us/visualstudio/ide/create-csharp-winform-visual-studio?view=vs-2022">Windows Forms application</a> that can be used to load more instances of the game <a href="https://universe.flyff.com/">Flyff Universe</a>.
+                <div class="project-title">FLYFF UL</div>
+                <a href="https://github.com/Tsadriu/FlyffUniverseLauncher" target="_blank"><img src="assets/images/flyffBg.png" class="project-img"></a>
+                A <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank">C#</a> <a href="https://learn.microsoft.com/en-us/visualstudio/ide/create-csharp-winform-visual-studio?view=vs-2022" target="_blank">Windows Forms application</a> that can be used to load more instances of the game <a href="https://universe.flyff.com/" target="_blank">Flyff Universe</a>.
             </div>
             <div class="project-desc">
-                <a href="https://www.nuget.org/packages/TsadriuUtilities"><img src="assets/images/setting_bg.png" class="project-img"></a>
-                A <a href="https://learn.microsoft.com/en-us/dotnet/csharp/">C#</a> library that has many utilities to manipulate strings, numbers and more.
+                <div class="project-title">TSADRIU UTILITIES</div>
+                <a href="https://www.nuget.org/packages/TsadriuUtilities" target="_blank"><img src="assets/images/setting_bg.png" class="project-img"></a>
+                A <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank">C#</a> library that has many utilities to manipulate strings, numbers and more.
             </div>
             <div class="project-desc">
-                <a href="https://www.nuget.org/packages/TsadriuUtilities.Excel"><img src="assets/images/excel_bg.png" class="project-img"></a>
-                A <a href="https://learn.microsoft.com/en-us/dotnet/csharp/">C#</a> library that helps on reading <b>XLSX</b> files.
+                <div class="project-title">TSADRIU UTILITIES.EXCEL</div>
+                <a href="https://www.nuget.org/packages/TsadriuUtilities.Excel" target="_blank"><img src="assets/images/excel_bg.png" class="project-img"></a>
+                A <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank">C#</a> library that helps on reading <b>XLSX</b> files.
             </div>
             <div class="project-desc">
-                <a href="https://www.nuget.org/packages/TsadriuUtilities.Csv"><img src="assets/images/csv_bg.png" class="project-img"></a>
-                A <a href="https://learn.microsoft.com/en-us/dotnet/csharp/">C#</a> library that helps on reading or creating a <b>CSV</b> file.
+                <div class="project-title">TSADRIU UTILITIES.CSV</div>
+                <a href="https://www.nuget.org/packages/TsadriuUtilities.Csv" target="_blank"><img src="assets/images/csv_bg.png" class="project-img"></a>
+                A <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank">C#</a> library that helps on reading or creating a <b>CSV</b> file.
             </div>
         </section>
 
@@ -80,8 +86,8 @@
             <h2>Socials</h2>
             Find me on:
             <ul>
-                <li>Email: <a href="mailto:fabiosousa15@live.com.pt">fabiosousa15 [at] live [dot] com [dot] pt</a></li>
-                <li>Discord: Tsadriu#4121</li>
+                <li><i class="fa fa-envelope"></i> Email: <a href="mailto:fabiosousa15@live.com.pt">fabiosousa15 [at] live [dot] com [dot] pt</a></li>
+                <li><i class="fa-brands fa-discord"></i> Discord: Tsadriu#4121</li>
             </ul>
         </section>
     </div>

@@ -82,7 +82,7 @@ h2 {
 }
 
 .logo {
-    border-radius: 25%;
+    border-radius: 50%;
     display: block;
     height: 164px;
     margin-left: auto;
@@ -130,6 +130,21 @@ h2 {
     color: white;
 }
 
+.project-title {
+    text-align: center;
+    font-size: 16pt;
+    font-weight: bold;
+    text-decoration: blink;
+    padding-bottom: 20px;
+    transition: 100ms ease;
+    animation: slight-wave 1.5s alternate infinite;
+}
+
+@keyframes slight-wave {
+    from {transform: scale(1.0);}
+    to {transform: scale(1.1);}
+}
+
 .project-desc {
     margin-top: 20px;
     margin-right: 20px;
@@ -169,8 +184,9 @@ h2 {
 }
 
 #nav-holder {
+    justify-content: space-evenly;
     background-color: rgba(9, 9, 9, 0.85);
-    justify-content: center;
+    flex-wrap: wrap;
     border-radius: 15px;
     padding: 20px;
 }
@@ -202,4 +218,21 @@ h2 {
 
 .shadow {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.33);
+}
+
+@media only screen and (max-width: 755px) {
+    #clock {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    #nav-holder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-el {
+        text-align: center;
+        margin: 0;
+    }
 }
