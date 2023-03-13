@@ -29,7 +29,7 @@ a:hover {
 }
 
 body {
-    background: black url("../../assets/images/star-bg.jpg") repeat fixed;
+    background: black url("assets/images/star-bg.jpg") repeat fixed;
     animation: moveStars 600s alternate infinite;
 }
 
