@@ -1,0 +1,265 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+a {
+    text-decoration: none;
+    animation: anchorBlink 4s ease-in-out infinite;
+}
+
+a:hover {
+    animation: step-end;
+    text-decoration: none;
+    color: orange;
+}
+
+@keyframes anchorBlink {
+    0% {
+        color: whitesmoke;
+    }
+    50% {
+        color: yellow;
+    }
+    100% {
+        color: whitesmoke;
+    }
+}
+
+body {
+    background: black url("../../assets/images/star-bg.jpg") repeat fixed;
+    animation: moveStars 600s alternate infinite;
+}
+
+@keyframes moveStars {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -50000px 90000px;
+    }
+}
+
+.container {
+    animation: transitionIn 0.75s;
+    flex-direction: column;
+    font-size: 14pt;
+    background-color: rgba(45, 45, 45, 0.75);
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 15px auto auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.container h2 {
+    font-style: italic;
+}
+
+#clock {
+    font-size: 20pt;
+    flex-direction: column;
+    text-align: right;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-bottom: -25px;
+}
+
+.flex {
+    display: flex;
+}
+
+#github {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-size: 24pt;
+    flex-direction: column;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    border-radius: 50%;
+    display: block;
+    max-width: 10%;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-desc {
+    align-items: center;
+    font-size: 24pt;
+    font-weight: bold;
+    flex-direction: column;
+    padding-bottom: 50px;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+/*noinspection ALL*/
+.logo-desc i::after {
+    content: ".dev";
+    animation: logoDescBlink 5s infinite;
+    color: hsl(var(--customHue), 100%, 50%);
+}
+
+@keyframes logoDescBlink {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px;
+    color: white;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 16pt;
+    font-weight: bold;
+    text-decoration: blink;
+    padding-bottom: 20px;
+    transition: 100ms ease;
+    animation: slight-wave 1.5s alternate infinite;
+}
+
+@keyframes slight-wave {
+    from {transform: scale(1.0);}
+    to {transform: scale(1.1);}
+}
+
+.project-desc {
+    padding: 20px;
+    max-width: 175px;
+    text-align: justify;
+    border-radius: 20px;
+    border: 10px;
+    transition: 100ms ease;
+}
+
+.project-desc:hover {
+    animation: projectDescShine 1.5s alternate infinite;
+}
+
+@keyframes projectDescShine {
+    from {
+        background-color: rgba(255, 255, 255, 0.00);
+    }
+    to {
+        background-color: rgba(255, 255, 255, 0.12);
+    }
+}
+
+.project-img {
+    border-radius: 20px;
+    filter: drop-shadow(2px 4px 6px black);
+    width: 175px;
+    margin-bottom: 15px;
+    transition: 100ms ease;
+}
+
+.project-img:hover {
+    transform: scale(1.05);
+}
+
+#nav-holder {
+    width:50%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    background-color: rgba(9, 9, 9, 0.85);
+    flex-wrap: wrap;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.nav-el {
+    animation: none;
+    padding: 8px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.nav-el:hover {
+    border-radius: 15px;
+    background-color: rgb(131, 131, 131);
+    padding: 8px;
+    text-align: center;
+    transition: 100ms ease;
+}
+
+.nav-el:active {
+    color: rgb(49, 138, 255);
+    text-decoration: none;
+    text-shadow: -0.5px -0.5px 0 #000000, 0.5px -0.5px 0 #000000, -0.5px 0.5px 0 #000000, 0.5px 0.5px 0 #000000;
+    transition: 100ms ease;
+}
+
+.shadow {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.33);
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    #nav-holder {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 755px) {
+    #clock {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .logo {
+        max-width: 100%;
+        height: 80px;
+        width: 80px;
+    }
+
+    #nav-holder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-el {
+        text-align: center;
+    }
+}
