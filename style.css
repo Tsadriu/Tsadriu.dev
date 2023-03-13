@@ -81,13 +81,18 @@ h2 {
     text-align: center;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .logo {
     border-radius: 50%;
     display: block;
-    height: 164px;
+    max-width: 10%;
+    height: auto;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 164px;
 }
 
 .logo-desc {
@@ -146,44 +151,42 @@ h2 {
 }
 
 .project-desc {
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
+    padding: 20px;
     max-width: 175px;
     text-align: justify;
+    border-radius: 20px;
+    border: 10px;
+    transition: 100ms ease;
 }
 
 .project-desc:hover {
-    animation: projectDescShine 4s infinite;
-    border: 10px;
-    border-radius: 20px;
+    animation: projectDescShine 1.5s alternate infinite;
 }
 
 @keyframes projectDescShine {
-    0% {
-        background-color: rgba(255, 255, 255, 0.1);
+    from {
+        background-color: rgba(255, 255, 255, 0.00);
     }
-    50% {
-        background-color: rgba(255, 255, 255, 0.05);
-    }
-    100% {
-        background-color: rgba(255, 255, 255, 0.1);
+    to {
+        background-color: rgba(255, 255, 255, 0.12);
     }
 }
 
 .project-img {
     border-radius: 20px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.33);
+    filter: drop-shadow(2px 4px 6px black);
     width: 175px;
+    margin-bottom: 15px;
     transition: 100ms ease;
 }
 
 .project-img:hover {
     transform: scale(1.05);
-    margin-bottom: 15px;
 }
 
 #nav-holder {
+    width:50%;
+    margin: 0 auto;
     justify-content: space-evenly;
     background-color: rgba(9, 9, 9, 0.85);
     flex-wrap: wrap;
@@ -194,14 +197,14 @@ h2 {
 .nav-el {
     animation: none;
     padding: 8px;
-    margin-right: 50px;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-weight: 600;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
 }
 
 .nav-el:hover {
-    font-weight: bold;
     border-radius: 15px;
     background-color: rgb(131, 131, 131);
     padding: 8px;
@@ -220,10 +223,23 @@ h2 {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.33);
 }
 
+@media only screen and (max-width: 960px) {
+    #nav-holder {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media only screen and (max-width: 755px) {
     #clock {
         text-align: center;
         padding-bottom: 50px;
+    }
+
+    .logo {
+        max-width: 100%;
+        height: 80px;
+        width: 80px;
     }
 
     #nav-holder {
@@ -233,6 +249,5 @@ h2 {
 
     .nav-el {
         text-align: center;
-        margin: 0;
     }
 }
