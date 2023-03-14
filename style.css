@@ -28,6 +28,14 @@ a:hover {
     }
 }
 
+#about-me {
+    transition: color 0.75s;
+}
+
+#about-me:target {
+    color: yellow;
+}
+
 body {
     background: black url("assets/images/star-bg.jpg") repeat fixed;
     animation: moveStars 600s alternate infinite;
@@ -42,8 +50,16 @@ body {
     }
 }
 
+#contacts {
+    transition: color 0.75s;
+}
+
+#contacts:target {
+    color: yellow;
+}
+
 .container {
-    animation: transitionIn 0.75s;
+    animation: transitionIn 0.8s;
     flex-direction: column;
     font-size: 14pt;
     background-color: rgba(45, 45, 45, 0.75);
@@ -127,6 +143,49 @@ html {
     }
 }
 
+#my-projects {
+    transition: color 0.75s;
+}
+
+#my-projects:target {
+    color: yellow;
+}
+
+#nav-holder {
+    width:50%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    background-color: rgba(9, 9, 9, 0.85);
+    flex-wrap: wrap;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.nav-el {
+    animation: none;
+    padding: 8px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.nav-el:hover {
+    border-radius: 15px;
+    background-color: rgb(131, 131, 131);
+    padding: 8px;
+    text-align: center;
+    transition: 100ms ease;
+}
+
+.nav-el:active {
+    color: rgb(49, 138, 255);
+    text-decoration: none;
+    text-shadow: -0.5px -0.5px 0 #000000, 0.5px -0.5px 0 #000000, -0.5px 0.5px 0 #000000, 0.5px 0.5px 0 #000000;
+    transition: 100ms ease;
+}
+
 .projects {
     flex-direction: row;
     flex-wrap: wrap;
@@ -184,43 +243,33 @@ html {
     transform: scale(1.05);
 }
 
-#nav-holder {
-    width:50%;
-    margin: 0 auto;
-    justify-content: space-evenly;
-    background-color: rgba(9, 9, 9, 0.85);
-    flex-wrap: wrap;
-    border-radius: 15px;
-    padding: 20px;
-}
-
-.nav-el {
-    animation: none;
-    padding: 8px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-weight: bold;
-    border-radius: 15px;
-}
-
-.nav-el:hover {
-    border-radius: 15px;
-    background-color: rgb(131, 131, 131);
-    padding: 8px;
-    text-align: center;
-    transition: 100ms ease;
-}
-
-.nav-el:active {
-    color: rgb(49, 138, 255);
-    text-decoration: none;
-    text-shadow: -0.5px -0.5px 0 #000000, 0.5px -0.5px 0 #000000, -0.5px 0.5px 0 #000000, 0.5px 0.5px 0 #000000;
-    transition: 100ms ease;
-}
-
 .shadow {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.33);
+}
+
+#skill {
+    transition: color 0.75s;
+}
+
+#skill:target {
+    color: yellow;
+}
+
+#goTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 1;
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 25%;
+}
+
+#goTopButton:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
 }
 
 @keyframes transitionIn {

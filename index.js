@@ -1,3 +1,27 @@
+// Get the button:
+let goTopButton = document.getElementById("goTopButton");
+
+window.onscroll = function() {
+    checkForPosition()
+};
+
+function checkForPosition() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+    {
+        goTopButton.style.display = "block";
+    }
+    else
+    {
+        goTopButton.style.display = "none";
+    }
+}
+
+function goTopPage() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+/* Animation of the .dev text */
 const logoDesc = document.querySelector('.logo-desc i');
 
 logoDesc.addEventListener('animationiteration', () => {
@@ -7,6 +31,7 @@ logoDesc.addEventListener('animationiteration', () => {
     logoDesc.style.setProperty('--customHue', availableColors[randomColor].toString());
 });
 
+/* The clock on the top right of the screen */
 function currentTime() {
     let date = new Date();
     let hh = date.getHours();
