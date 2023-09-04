@@ -1,3 +1,21 @@
+window.onload = function () {
+    const setAge = () => {
+        const birthDate = new Date('2000-03-25');
+        const todayDate = new Date();
+        let age = todayDate.getFullYear() - birthDate.getFullYear();
+        const month = todayDate.getMonth() - birthDate.getMonth();
+        const day = todayDate.getDate() - birthDate.getDate();
+
+        if (month < 0 || (month === 0 && todayDate.getDate() < birthDate.getDate())) {
+            age--;
+        }
+
+        document.getElementById('age').textContent = age;
+    }
+
+    setAge();
+}
+
 // Get the button:
 let goTopButton = document.getElementById("goTopButton");
 
