@@ -124,23 +124,8 @@ html {
 /*noinspection ALL*/
 .logo-desc i::after {
     content: ".dev";
-    animation: logoDescBlink 5s infinite;
     color: hsl(var(--customHue), 100%, 50%);
-}
-
-@keyframes logoDescBlink {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+    transition: color 0.5s linear;
 }
 
 #my-projects {

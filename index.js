@@ -42,9 +42,13 @@ function goTopPage() {
 /* Animation of the .dev text */
 const logoDesc = document.querySelector('.logo-desc i');
 
-logoDesc.addEventListener('animationiteration', () => {
-    let randomColor = Math.floor(Math.random() * 7);
-    let availableColors = [0, 30, 60, 120, 240, 270, 300];
+// Initialize hue
+logoDesc.style.setProperty('--customHue', '0');
 
-    logoDesc.style.setProperty('--customHue', availableColors[randomColor].toString());
-});
+// Interval to increment hue
+setInterval(() => {
+    let currentHue = parseInt(logoDesc.style.getPropertyValue('--customHue'));
+    let newHue = (currentHue + 10) % 360; // change hue value gradually.
+
+    logoDesc.style.setProperty('--customHue', newHue);
+}, 475);
