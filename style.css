@@ -2,70 +2,116 @@
     color: whitesmoke;
     font-family: monospace;
     font-size: 1.1rem;
+    background: rgb(32, 32, 33);
+}
+
+body {
+    padding-top: 50px;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .header {
-    position: relative;
-    height: 100vh;
-    background-image: linear-gradient(to top right,
-    rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 1) 90%),
-    url('assets/images/bg.png');
-    background-size: cover;
-    background-position: center;
-    transition: background 1s linear;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header h1 {
+    font-size: 150%;
+}
+
+.header h2 {
+    color: #a9a9a9;
+    text-align: center;
+}
+
+#body {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#body h2 {
+    font-size: 125%;
+    text-align: left;
+}
+
+.logo {
+    max-width: 128px;
+    max-height: 128px;
+    border-radius: 50%;
+    justify-content: flex-start;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons i {
+    font-size: 36px;
+    transition: 100ms ease-in-out;
+}
+
+.social-icons i:hover {
+    scale: 120%;
+    color: #fffdc4;
 }
 
 .content {
     height: 2000px;
-    background: white;
-}
-
-#body {
-    width: 1600px;
-    background: rgba(0, 0, 0, 0.85);
 }
 
 .my-skills-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    padding: 15px;
+    column-gap: 30px;
+    row-gap: 20px;
 }
 
 .skill-bubble {
-    align-items: center; /* center children horizontally */
-    text-align: center; /* center text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(245, 245, 245, 0.5);
+    border-radius: 20px;
+    padding: 25px;
+    min-width: 200px;
+    max-width: 200px;
+    transition: 100ms ease-in-out;
 }
 
 .skill-bubble-img {
     max-width: 80px;
     max-height: 80px;
-    border-radius: 20px;
-    filter: drop-shadow(2px 4px 6px rgba(255, 255, 255, 0.3));
     transition: 100ms ease-in-out;
 }
 
+.php-skill-img {
+    max-width: 130px;
+    max-height: 130px;
+}
+
 .skill-bubble-img:hover {
-    scale: 115%;
+    scale: 120%;
 }
 
 .skill-description {
     font-style: italic;
     padding: 12px;
-}
-
-@keyframes on-mouse-hover {
-    0% {
-        scale: 100%;
-    }
-    25% {
-        scale: 115%;
-    }
-    75% {
-        scale: 115%;
-    }
-    100% {
-        scale: 100%;
-    }
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .skill-usage {
@@ -90,4 +136,59 @@
 
 .skill-usage-very-low {
     color: #3f7bff;
+}
+
+.my-projects-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    column-gap: 30px;
+    row-gap: 20px;
+}
+
+.project-bubble {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(245, 245, 245, 0.5);
+    border-radius: 20px;
+    padding: 25px;
+    min-width: 200px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.project-name {
+    padding-top: 10px;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.project-bubble-img {
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 20px;
+    transition: 100ms ease-in-out;
+}
+
+.project-bubble-img:hover {
+    scale: 110%;
+}
+
+.project-description {
+    font-style: italic;
+    padding: 12px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+}
+
+.project-made-in {
+    font-weight: bold;
 }
