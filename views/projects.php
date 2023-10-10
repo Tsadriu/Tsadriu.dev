@@ -14,7 +14,7 @@ $projects = $controller->getProjects();
                 </a>
             </div>
             <div class="project-name">
-                <?php echo $project['name']; ?>
+                <?php echo strtoupper($project['name']); ?>
             </div>
             <div class="project-description">
                 <?php echo $project['description']; ?>

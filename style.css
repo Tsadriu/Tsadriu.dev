@@ -58,7 +58,7 @@ body {
 
 .social-icons i:hover {
     scale: 120%;
-    color: #fffdc4;
+    color: #f1b900;
 }
 
 .content {
@@ -165,6 +165,7 @@ body {
     padding-top: 10px;
     font-size: 110%;
     font-weight: bold;
+    overflow-wrap: break-word;
 }
 
 .project-bubble-img {
@@ -215,5 +216,10 @@ body {
     .skill-bubble, .project-bubble {
         min-width: 100px;
         max-width: 100px;
+    }
+
+    .project-name {
+        font-size: 90%;
+        overflow: auto;
     }
 }
