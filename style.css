@@ -119,23 +119,23 @@ body {
 }
 
 .skill-usage-very-high {
-    color: #ff6969;
+    color: #3f7bff;
 }
 
 .skill-usage-high {
-    color: #ff7b1b;
+    color: #238c46;
 }
 
 .skill-usage-medium {
-    color: #dcda4e;
+    color: #e0c620;
 }
 
 .skill-usage-low {
-    color: #53c54e;
+    color: #f66a0a;
 }
 
 .skill-usage-very-low {
-    color: #3f7bff;
+    color: #d02626;
 }
 
 .my-projects-section {

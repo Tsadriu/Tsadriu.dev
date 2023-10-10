@@ -36,7 +36,7 @@ class ProjectsController
             "name" => "Apocalamalipse",
             "description" => "Small python game developed for a school project",
             "made-in" => ["Python"],
-            "link" => "https://www.nuget.org/packages/TsadriuUtilities.Csv",
+            "link" => "https://github.com/Tsadriu/Apocalamalipse",
         ], [
             "image" => "assets/images/flyff_bg.png",
             "alt" => "Flyff Universe Launcher",
