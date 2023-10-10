@@ -18,7 +18,7 @@ $skills = $controller->getSkills();
             <div class="skill-description">
                 <?php echo $skill['description']; ?>
             </div>
-            Usage: <span class="skill-usage skill-usage-<?php echo strtolower($skill['usage']); ?>">
+            Usage: <span class="skill-usage skill-usage-<?php echo strtolower($skill['usage_class']); ?>">
                         <?php echo $skill['usage']; ?>
                     </span>
         </div>

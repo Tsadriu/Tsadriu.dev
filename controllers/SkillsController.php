@@ -26,7 +26,8 @@ class SkillsController {
             "image" => "assets/images/c_sharp.svg",
             "alt" => "C#",
             "description" => "C#, Entity Framework Core (EF)",
-            "usage" => "Very-High",
+            "usage" => "Very High",
+            "usage_class" => "very-high",
             "class" => $defaultClass,
             "link" => "https://learn.microsoft.com/en-us/dotnet/csharp/",
         ], [
@@ -34,6 +35,7 @@ class SkillsController {
             "alt" => "Unity",
             "description" => "Unity 2D",
             "usage" => "High",
+            "usage_class" => "high",
             "class" => $defaultClass,
             "link" => "https://unity.com/",
         ], [
@@ -41,6 +43,7 @@ class SkillsController {
             "alt" => "Structured Query Language (SQL)",
             "description" => "SQL (MSSQL)",
             "usage" => "Medium",
+            "usage_class" => "medium",
             "class" => $defaultClass,
             "link" => "https://en.wikipedia.org/wiki/SQL",
         ], [
@@ -48,6 +51,7 @@ class SkillsController {
             "alt" => "PHP",
             "description" => "PHP",
             "usage" => "Low",
+            "usage_class" => "low",
             "class" => $defaultClass . " php-skill-img",
             "link" => "https://www.php.net/",
         ], [
@@ -55,6 +59,7 @@ class SkillsController {
             "alt" => "Java",
             "description" => "Java",
             "usage" => "Low",
+            "usage_class" => "low",
             "class" => $defaultClass,
             "link" => "https://www.java.com/",
         ], [
@@ -62,6 +67,7 @@ class SkillsController {
             "alt" => "Kotlin",
             "description" => "Kotlin",
             "usage" => "Low",
+            "usage_class" => "low",
             "class" => $defaultClass,
             "link" => "https://kotlinlang.org/",
         ], [
@@ -69,6 +75,7 @@ class SkillsController {
             "alt" => "Html",
             "description" => "HTML",
             "usage" => "Low",
+            "usage_class" => "low",
             "class" => $defaultClass,
             "link" => "https://www.w3schools.com/html/",
         ], [
@@ -76,20 +83,23 @@ class SkillsController {
             "alt" => "Css",
             "description" => "CSS",
             "usage" => "Low",
+            "usage_class" => "low",
             "class" => $defaultClass,
             "link" => "https://www.w3schools.com/css/",
         ], [
             "image" => "assets/images/js.svg",
             "alt" => "JavaScript",
             "description" => "JavaScript",
-            "usage" => "Very-Low",
+            "usage" => "Very Low",
+            "usage_class" => "very-low",
             "class" => $defaultClass,
             "link" => "https://www.w3schools.com/js/",
         ], [
             "image" => "assets/images/python.svg",
             "alt" => "Python",
             "description" => "Python",
-            "usage" => "Very-Low",
+            "usage" => "Very Low",
+            "usage_class" => "very-low",
             "class" => $defaultClass,
             "link" => "https://www.python.org/",
         ],];

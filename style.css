@@ -214,12 +214,29 @@ body {
     }
 
     .skill-bubble, .project-bubble {
-        min-width: 100px;
-        max-width: 100px;
+        min-width: 80px;
+        max-width: 80px;
+        font-size: 85%;
     }
 
     .project-name {
-        font-size: 90%;
+        font-size: 80%;
+    }
+
+    .project-description {
+        font-size: 75%;
+    }
+
+    .skill-description {
+        font-size: 85%;
         overflow: auto;
+    }
+
+    .skill-usage {
+        font-size: 75%;
+    }
+
+    .project-made-in {
+        font-size: 70%;
     }
 }
