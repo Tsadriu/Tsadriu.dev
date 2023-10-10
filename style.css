@@ -214,8 +214,8 @@ body {
     }
 
     .skill-bubble, .project-bubble {
-        min-width: 80px;
-        max-width: 80px;
+        min-width: 100px;
+        max-width: 100px;
         font-size: 85%;
     }
 
