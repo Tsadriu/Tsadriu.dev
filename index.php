@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Fabio, Oliveira, Software, Developer">
+    <meta name="description" content="Fabio Oliveira's personal portfolio.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="icon" href="assets/images/logo_round.png">
     <title>
         [Tsadriu] Fabio Oliveira
     </title>
 </head>
 <body>
-<section class="header">
+<header class="header">
     <img src="assets/images/logo.png" alt="Logo icon" class="logo">
     <div>
         <h1>FABIO OLIVEIRA DE SOUSA</h1>
@@ -27,7 +30,7 @@
             <i class="fa-brands fa-linkedin-in"></i>
         </a>
     </div>
-</section>
+</header>
 <div id="body">
     <h2>My Skills</h2>
     <hr>
