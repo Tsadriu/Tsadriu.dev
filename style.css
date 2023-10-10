@@ -192,3 +192,28 @@ body {
 .project-made-in {
     font-weight: bold;
 }
+
+@media screen and (max-width: 600px) {
+    body {
+        padding-top: 25px;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .my-skills-section, .my-projects-section {
+        justify-content: space-around;
+        gap: 15px;
+    }
+
+    .skill-bubble, .project-bubble {
+        min-width: 100px;
+        max-width: 100px;
+    }
+}
