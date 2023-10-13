@@ -38,6 +38,13 @@ class ProjectsController
             "made-in" => ["Python"],
             "link" => "https://github.com/Tsadriu/Apocalamalipse",
         ], [
+            "image" => "assets/images/tic_tac_toe.png",
+            "alt" => "Tic Tac Toe",
+            "name" => "Tic Tac Toe",
+            "description" => "Small android project developed for a school project",
+            "made-in" => ["Kotlin, Android Studio"],
+            "link" => "https://github.com/Ale32bit/TicTacToe",
+        ],[
             "image" => "assets/images/flyff_bg.png",
             "alt" => "Flyff Universe Launcher",
             "name" => "Flyff Universe Launcher",
