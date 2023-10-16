@@ -83,7 +83,7 @@ body {
     align-items: center;
     border: 1px solid rgba(245, 245, 245, 0.5);
     border-radius: 20px;
-    padding: 25px;
+    padding: 10px 6px 6px 6px;
     min-width: 200px;
     max-width: 200px;
     transition: 100ms ease-in-out;
@@ -106,7 +106,7 @@ body {
 
 .skill-description {
     font-style: italic;
-    padding: 12px;
+    padding: 6px 0 6px 0;
     flex: 1;
     display: flex;
     align-items: center;
@@ -155,7 +155,7 @@ body {
     align-items: center;
     border: 1px solid rgba(245, 245, 245, 0.5);
     border-radius: 20px;
-    padding: 25px;
+    padding: 10px 6px 6px 6px;
     min-width: 200px;
     max-width: 200px;
     text-align: center;
@@ -181,7 +181,7 @@ body {
 
 .project-description {
     font-style: italic;
-    padding: 12px;
+    padding: 6px 0 6px 0;
     flex: 1;
     display: flex;
     align-items: center;
@@ -210,13 +210,23 @@ body {
 
     .my-skills-section, .my-projects-section {
         justify-content: space-around;
-        gap: 15px;
+        column-gap: 5px;
     }
 
     .skill-bubble, .project-bubble {
-        min-width: 100px;
-        max-width: 100px;
+        min-width: 130px;
+        max-width: 130px;
         font-size: 85%;
+    }
+
+    .project-bubble-img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .skill-bubble-img, .php-skill-img {
+        max-width: 60px;
+        max-height: 60px;
     }
 
     .project-name {
