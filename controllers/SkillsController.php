@@ -90,8 +90,8 @@ class SkillsController {
             "image" => "assets/images/js.svg",
             "alt" => "JavaScript",
             "description" => "JavaScript",
-            "usage" => "Very Low",
-            "usage_class" => "very-low",
+            "usage" => "Low",
+            "usage_class" => "low",
             "class" => $defaultClass,
             "link" => "https://www.w3schools.com/js/",
         ], [
